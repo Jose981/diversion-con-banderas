@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Restcountries App</title>
-  <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-  <h1>Información sobre Países</h1>
-  <div id="countries-list"></div>
-
-  <script src="./js/script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restcountries App</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="cabecera">
+      <img style="width: 150px" ; src="img/icono-mundo.jpeg" alt="icono" />
+      <h1>Diversión con banderas</h1>
+    </div>
+    <div id="countries-list"></div>
+    <!-- MODAL -->
+    <div id="modal-pais" class="modal">
+      <div class="modal-contenido">
+        <span class="cerrar" id="cerrar-modal">&times;</span>
+        <div class="modal-datos">
+          <img id="modal-bandera" alt="Bandera" />
+          <br />
+          <span id="modal-nombre"></span>
+          <span id="capital"></span>
+          <span id="population"></span>
+          <span id="car"></span>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
